@@ -76,8 +76,9 @@ After running this project, you'll understand:
 
 ## ❓ Common Questions
 
-**Q: Do I need to modify the notebook?**
-A: No! Just run it as-is. It will work with your creditcard.csv file.
+**Q: Do I need to modify anything before running?**
+A: No! Just run the script. It will work with your creditcard.csv file.
+
 
 **Q: Can I run on Windows/Mac/Linux?**
 A: Yes! Python packages work on all platforms.
@@ -94,7 +95,8 @@ A: ~1-5 minutes depending on your computer speed.
 
 | Problem | Solution |
 |---------|----------|
-| "creditcard.csv not found" | Ensure file is in same folder as notebook |
+| "creditcard.csv not found" | Ensure file is in same folder as the script |
+
 | "Module not found" | Run: `pip install -r requirements.txt` |
 | Slow performance | Try running on fewer rows or close other apps |
 | Memory error | Your CSV is too large; check system RAM |

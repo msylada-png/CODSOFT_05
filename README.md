@@ -26,7 +26,7 @@ Credit_Card/
 ### Prerequisites
 - Python 3.8 or higher
 - pip (Python package manager)
-- Jupyter Notebook
+
 
 ### Installation
 
@@ -82,7 +82,7 @@ The script performs the following analysis in order:
 
 ## 📝 Expected Output
 
-When you run the notebook, you'll see:
+When you run the script, you'll see:
 - Dataset statistics and info
 - Class distribution analysis
 - Before/after SMOTE comparison
@@ -94,7 +94,9 @@ When you run the notebook, you'll see:
 
 ## 💡 Model Performance
 
-The notebook trains and compares:
+
+The script trains and compares:
+
 - **Logistic Regression**: Fast, interpretable model
 - **Random Forest**: More complex, typically better accuracy
 
@@ -116,12 +118,12 @@ You can easily modify:
 - **scikit-learn**: Machine learning algorithms and metrics
 - **imbalanced-learn**: SMOTE implementation
 - **matplotlib & seaborn**: Data visualization
-- **jupyter**: Interactive notebook environment
+
 
 ## ⚠️ Important Notes
 
-1. **Dataset**: Ensure `creditcard.csv` is in the same folder as the notebook
-2. **First Run**: The notebook may take a few minutes to run (especially SMOTE)
+1. **Dataset**: Ensure `creditcard.csv` is in the same folder as the script
+2. **First Run**: The script may take a few minutes to run (especially SMOTE)
 3. **Memory**: Large datasets may require significant RAM
 4. **Random State**: Set to 42 for reproducible results
 5. **Class Imbalance**: This project handles highly imbalanced fraud data

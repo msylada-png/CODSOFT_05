@@ -8,7 +8,7 @@ This is a **complete, production-ready machine learning project** for detecting 
 - ✅ Two classification algorithms (Logistic Regression & Random Forest)
 - ✅ Comprehensive evaluation metrics (Precision, Recall, F1-Score)
 - ✅ Visual analysis and feature importance ranking
-- ✅ Multiple deployment options (Notebook, Python script)
+✅ Multiple deployment options (Python script)
 - ✅ Zero external configuration needed
 
 ---
@@ -19,7 +19,8 @@ This is a **complete, production-ready machine learning project** for detecting 
 
 | File | Purpose | Usage |
 |------|---------|-------|
-| `credit_card_fraud_detection.ipynb` | **Main Jupyter Notebook** | Interactive analysis with visualizations |
+| `credit_card_fraud_detection.ipynb` | **(Removed) Notebook** | Interactive analysis with visualizations |
+
 | `fraud_detection.py` | Standalone Python script | Run from command line without Jupyter |
 | `creditcard.csv` | **Your dataset** (must be present) | Input data for analysis |
 
@@ -42,16 +43,15 @@ This is a **complete, production-ready machine learning project** for detecting 
 
 ## 🚀 How to Run
 
-### Option 1: Jupyter Notebook (Recommended for Learning)
+### Option 1: (Removed) Notebook (Recommended for Learning)
+
 
 ```bash
 # Install dependencies once
 pip install -r requirements.txt
 
-# Launch Jupyter
-jupyter notebook credit_card_fraud_detection.ipynb
+# (Removed) Jupyter execution steps
 
-# Run all cells (Shift+Enter or Cell > Run All)
 ```
 
 ### Option 2: Python Script (Recommended for Automation)
@@ -258,7 +258,8 @@ F1-Score:  0.8696    → Good balance
 
 ### Change Model Parameters
 
-**In Jupyter:**
+**In Python script:**
+
 Find the training cells and modify:
 ```python
 # Logistic Regression
@@ -277,7 +278,8 @@ rf_clf = RandomForestClassifier(n_estimators=200, random_state=42)
 
 ### Change SMOTE Strategy
 
-In notebook or script, modify:
+In script, modify:
+
 ```python
 smote = SMOTE(sampling_strategy=1.0)  # 1.0 = equal classes
 ```
@@ -300,7 +302,8 @@ X_train, X_test, y_train, y_test = train_test_split(
 ### Error: "Module not found: sklearn"
 **Solution**: Run `pip install -r requirements.txt`
 
-### Notebook runs very slowly
+### Script runs very slowly
+
 **Solutions**:
 - Close other applications
 - Use a smaller sample: `df = df.sample(n=50000)`
@@ -310,7 +313,8 @@ X_train, X_test, y_train, y_test = train_test_split(
 **Solutions**:
 - Use only a subset: `df = df.head(100000)`
 - Increase system RAM
-- Run the Python script instead of notebook
+- Optimize runtime or use a smaller sample
+
 
 ---
 
@@ -446,4 +450,5 @@ This project demonstrates a **professional approach to machine learning**:
 
 **Happy Learning & Fraud Detection! 🔍**
 
-Questions? Check README.md or review the notebook cells.
+Questions? Check README.md.
+
