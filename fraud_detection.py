@@ -1,9 +1,3 @@
-"""
-Credit Card Fraud Detection - Standalone Python Script
-This script performs fraud detection without requiring Jupyter Notebook
-Run with: python fraud_detection.py
-"""
-
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
